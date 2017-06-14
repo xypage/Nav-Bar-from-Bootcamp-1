@@ -1,0 +1,71 @@
+nav, #hide, .chevron, .nav-links, .logo, .links {
+  list-style:none;
+  transition-timing-function: ease;
+  transition:all 1s;
+}
+h1 {
+  margin:60px;
+}
+.nav-links {
+  visibility:hidden;
+}
+.main-nav {
+  width:30px;
+  background:#2f2f2f;
+  position:fixed;
+  top: 35%;
+  height:20em;
+}
+#hide {
+  position:relative;
+  visibility:initial;
+  float:right;
+  background-color:grey;
+  opacity:100%;
+  height:5.2em;
+  width:1.5em;
+  top:7em;
+  left:1.5em;
+}
+.chevron {
+  position:relative;
+  top:.1em;
+  height:5em;
+  width:1.7em;
+}
+.logo {
+  height:70px;
+  margin:11px -5px 20px;
+  width:0px;
+}
+.links {
+  color:#F2F2F2;
+  font-size:0px;
+  margin-bottom:30px;
+  margin-left:0px;
+  margin-top:20px;
+}
+.main-nav:hover #hide, .main-nav:hover .chevron {
+  width:0px;
+  opacity:0;
+  left:0em;
+  transition:all 1s;
+}
+.main-nav:hover .nav-links {
+  visibility:initial;
+  list-style:none;
+  padding:16px;
+}
+.main-nav:hover {
+  width:140px;
+  transition:width 1s;
+}
+.main-nav:hover .logo {
+  width:70%;
+}
+.main-nav:hover .links {
+  font-size:18px;
+  margin-top:0px;
+  margin-left:20px;
+  transition:all 1s;
+}
